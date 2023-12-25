@@ -32,6 +32,10 @@
 		1BC823682B394B2F00D23EAF /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BC823672B394B2F00D23EAF /* hikeData.json */; };
 		1BC8236B2B394D4700D23EAF /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8236A2B394D4700D23EAF /* CategoryRow.swift */; };
 		1BC8236D2B3950D900D23EAF /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8236C2B3950D900D23EAF /* CategoryItem.swift */; };
+		1BC8236F2B3979DB00D23EAF /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8236E2B3979DB00D23EAF /* ProfileHost.swift */; };
+		1BC823732B397A1200D23EAF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC823722B397A1200D23EAF /* Profile.swift */; };
+		1BC823772B3981FE00D23EAF /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC823762B3981FE00D23EAF /* ProfileSummary.swift */; };
+		1BC8237B2B398AD600D23EAF /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8237A2B398AD600D23EAF /* ProfileEditor.swift */; };
 		1BF50F9D2B30543D00848377 /* SwiftUIFirstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF50F9C2B30543D00848377 /* SwiftUIFirstApp.swift */; };
 		1BF50F9F2B30543D00848377 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF50F9E2B30543D00848377 /* ContentView.swift */; };
 		1BF50FA12B30543E00848377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF50FA02B30543E00848377 /* Assets.xcassets */; };
@@ -84,6 +88,10 @@
 		1BC823672B394B2F00D23EAF /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		1BC8236A2B394D4700D23EAF /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		1BC8236C2B3950D900D23EAF /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		1BC8236E2B3979DB00D23EAF /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		1BC823722B397A1200D23EAF /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1BC823762B3981FE00D23EAF /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		1BC8237A2B398AD600D23EAF /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		1BF50F992B30543D00848377 /* SwiftUIFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF50F9C2B30543D00848377 /* SwiftUIFirstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirstApp.swift; sourceTree = "<group>"; };
 		1BF50F9E2B30543D00848377 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 			children = (
 				1BC823692B394D3A00D23EAF /* Category */,
 				1B3818762B357F390057A817 /* Landmarks */,
+				1BC823702B3979E000D23EAF /* Profile */,
 				1B3818772B357F460057A817 /* Helper */,
 			);
 			path = Views;
@@ -203,6 +212,17 @@
 				1BC8236C2B3950D900D23EAF /* CategoryItem.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		1BC823702B3979E000D23EAF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1BC8236E2B3979DB00D23EAF /* ProfileHost.swift */,
+				1BC823722B397A1200D23EAF /* Profile.swift */,
+				1BC823762B3981FE00D23EAF /* ProfileSummary.swift */,
+				1BC8237A2B398AD600D23EAF /* ProfileEditor.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		1BF50F902B30543D00848377 = {
@@ -412,16 +432,20 @@
 				1BF50F9F2B30543D00848377 /* ContentView.swift in Sources */,
 				1B6A6BEB2B30744400ECF91C /* MapView.swift in Sources */,
 				1BF50F9D2B30543D00848377 /* SwiftUIFirstApp.swift in Sources */,
+				1BC8236F2B3979DB00D23EAF /* ProfileHost.swift in Sources */,
 				1B3818752B357E1B0057A817 /* FavoriteButton.swift in Sources */,
 				1BC823662B39498300D23EAF /* CategoryHome.swift in Sources */,
 				1BC8232C2B35B33600D23EAF /* UserDefaultsWrapper.swift in Sources */,
 				1BC8236B2B394D4700D23EAF /* CategoryRow.swift in Sources */,
+				1BC8237B2B398AD600D23EAF /* ProfileEditor.swift in Sources */,
 				1B3818712B34702A0057A817 /* LandmarkList.swift in Sources */,
 				1B3818732B3474370057A817 /* LandmarkDetail.swift in Sources */,
 				1B6A6BE92B30733100ECF91C /* CircleImage.swift in Sources */,
 				1BC8236D2B3950D900D23EAF /* CategoryItem.swift in Sources */,
+				1BC823772B3981FE00D23EAF /* ProfileSummary.swift in Sources */,
 				1B6A6C092B307C1C00ECF91C /* Landmark.swift in Sources */,
 				1B6A6C132B3081B000ECF91C /* LandmarkRow.swift in Sources */,
+				1BC823732B397A1200D23EAF /* Profile.swift in Sources */,
 				1B6A6C0B2B307F3500ECF91C /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
