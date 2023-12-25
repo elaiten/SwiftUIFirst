@@ -5,8 +5,20 @@ import SwiftUI
 class ModelData: ObservableObject {
     @Published
     var landmarks: [Landmark] = load("landmarkData.json")
-}
+//    var hikes: [Hike] = load("hikeData.json")
+    
+    var feature: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
+    
+    var category: [String: [Landmark]] {
+        Dictionary(
+            grouping: landmarks) { $0.category.rawValue }
+    }
 
+
+
+}
 
 
 
