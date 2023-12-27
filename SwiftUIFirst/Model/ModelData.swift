@@ -2,9 +2,9 @@ import Foundation
 import SwiftUI
 
 class ModelData: ObservableObject {
-    @Published
-    var landmarks: [Landmark] = load("landmarkData.json")
-    var profile = Profile.defaultProfile
+
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+    @Published var profile = Profile.defaultProfile
     
     
     var feature: [Landmark] {
